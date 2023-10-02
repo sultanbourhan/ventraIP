@@ -1,0 +1,677 @@
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+body{
+    font-family: 'Heebo', sans-serif;
+}
+
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+    
+}
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+    
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1000px; 
+    }
+}
+
+.container{
+    margin: auto;
+    padding-left:15px ;
+    padding-right:15px ;
+}
+
+
+
+header .container .flex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header .container .flex img{
+    height: 80px;
+}
+
+header .container .flex >div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: end;
+}
+
+header .container .flex >div >div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .flex >div >div:nth-child(2){
+    gap: 25px;
+}
+
+header .container .flex >div >div > span{
+    padding: 17px 0;
+}
+
+header .container .flex >div >div > span:nth-child(1),
+header .container .flex >div >div > span:nth-child(3){
+    color: #657280;
+    font-size: 14px;
+}
+
+header .container .flex >div >div > span:nth-child(2){
+    font-weight: 700;
+    color: #31383f;
+}
+
+header .container .flex >div >div > span:nth-child(3):hover,
+header .container .flex >div >div > span:nth-child(2) >span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header .container .flex >div >div > span:nth-child(3){
+    padding-right: 10px;
+    border-right: 1px solid #dae0e2;
+}
+
+header .container .flex >div >div > span:nth-child(4),
+header .container .flex >div >div > span:nth-child(5),
+header .container .flex >div >div > span:nth-child(6){
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size:14px ;
+    color: #31383f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .container .flex >div >div > span:nth-child(4) span:nth-child(1),
+header .container .flex >div >div > span:nth-child(5) span:nth-child(1),
+header .container .flex >div >div > span:nth-child(6) span:nth-child(1){
+    font-size: 27px;
+}
+
+header .container .flex >div >div > span:nth-child(5),
+header .container .flex >div >div > span:nth-child(6){
+    color: #c32888;
+}
+
+header .container .flex >div >div > span:nth-child(4):hover span:nth-child(2),
+header .container .flex >div >div > span:nth-child(5):hover span:nth-child(2),
+header .container .flex >div >div > span:nth-child(6):hover span:nth-child(2){
+    text-decoration: underline;
+}
+
+header .container .flex >div >div:nth-child(2) .vps > a,
+header .container .flex >div >div:nth-child(2) .ssl > a,
+header .container .flex >div >div:nth-child(2) .email > a,
+header .container .flex >div >div:nth-child(2) .web > a,
+header .container .flex >div >div:nth-child(2) .domain > a{
+    position: relative;
+}
+
+header .container .flex >div >div:nth-child(2) .email > a::after,
+header .container .flex >div >div:nth-child(2) .vps > a::after,
+header .container .flex >div >div:nth-child(2) .web > a::after,
+header .container .flex >div >div:nth-child(2) .domain > a::after{
+    content: "";
+    border-width: 15px ;
+    border-style: solid ;
+    border-color: transparent transparent #dae0e2 transparent ;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    display: none;
+    transition: 0.3s;
+}
+
+header .container .flex .icon:hover,
+header .container .flex >div >div:nth-child(2) .email:hover >a,
+header .container .flex >div >div:nth-child(2) .ssl:hover >a,
+header .container .flex >div >div:nth-child(2) .vps:hover >a,
+header .container .flex >div >div:nth-child(2) .web:hover >a,
+header .container .flex >div >div:nth-child(2) .domain:hover >a{
+    color: #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .email:hover >div,
+header .container .flex >div >div:nth-child(2) .email:hover > a::after,
+header .container .flex >div >div:nth-child(2) .vps:hover >div,
+header .container .flex >div >div:nth-child(2) .vps:hover > a::after,
+header .container .flex >div >div:nth-child(2) .web:hover >div,
+header .container .flex >div >div:nth-child(2) .web:hover > a::after,
+header .container .flex >div >div:nth-child(2) .domain:hover >div,
+header .container .flex >div >div:nth-child(2) .domain:hover > a::after{
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+header .container .flex >div >div:nth-child(2) .email >a,
+header .container .flex >div >div:nth-child(2) .ssl >a,
+header .container .flex >div >div:nth-child(2) .vps >a,
+header .container .flex >div >div:nth-child(2) .web >a,
+header .container .flex >div >div:nth-child(2) .domain >a{
+    font-weight: 600;
+    font-size: 19px;
+    color: #31383f;
+    padding-bottom: 25px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+header .container .flex >div >div:nth-child(2) .email >div,
+header .container .flex >div >div:nth-child(2) .ssl >div,
+header .container .flex >div >div:nth-child(2) .vps >div,
+header .container .flex >div >div:nth-child(2) .web >div,
+header .container .flex >div >div:nth-child(2) .domain >div{
+    position: absolute;
+    width: 100%;
+    bottom: unset;
+    left: 0;
+    background: #fff;
+    padding: 40px 0 10px;
+    border-top: 1px solid #dae0e2;
+    border-bottom: 2px solid #657280;
+    display: none;
+    transition: 0.3s;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    border-bottom: 1px solid #dae0e2;
+    padding-bottom: 30px;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 24%;
+    
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a span{
+    font-size: 35px;
+    color: #657280;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a h2{
+    font-size: 17px;
+    font-weight: 400;
+    color: #31383f;
+    margin-top: 5px;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a:hover span,
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a:hover h2{
+    color: #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(1) a p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #657280;
+    line-height: 1.4;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .form{
+    height: 60px;
+    border-radius: 5px;
+    border: 2px solid #363636;
+    padding: 0 8px 0 10px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .form span:nth-child(1){
+    color: #363636;
+    padding: 0 5px;
+    margin-right: 0;
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 1px;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .form input{
+    flex: 1;
+    font-size: 17px;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .form input:focus{
+    outline: none;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .form span:nth-child(3){
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    background-color: #1cb4e9;
+    padding: 7px 30px;
+    border-radius: 3px;
+}
+
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .img{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+header .container .flex >div >div:nth-child(2) .domain >div > div:nth-child(2) .img img{
+    width: 60px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1){
+    padding: 0px 0 30px;
+    display: flex;
+    border-bottom: 1px solid #dae0e2;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1{
+    width: 25%;
+    padding: 10px 15px;
+    border-right: 1px solid #dae0e2;
+    text-align: center;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:hover{
+    background-color: #f5f7f8;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:last-child{
+    border-right: none;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 > span:nth-child(1){
+    color: #657280;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:hover > span:nth-child(3),
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:hover > h2,
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:hover > span:nth-child(1){
+    color: #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 > h2{
+    font-size: 19px;
+    font-weight: 400;
+    color: #31383f;
+    margin-bottom: 15px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 > span:nth-child(3){
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    color: #657280;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #dae0e2;
+    width: 80%;
+    margin: auto;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1:hover > span:nth-child(3){
+    border-bottom: 2px solid #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 > span:nth-child(3) span:nth-child(1){
+    font-weight:bold ;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 > span:nth-child(3) span:nth-child(2){
+    font-size:16px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 >p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #657280;
+    line-height: 1.4;
+    margin-top: 15px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(1) .box1 >p span{
+    font-weight: bold;
+}
+
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2) img{
+    width: 50px;
+    height: 50px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2)> span{
+    font-size: 14px;
+    color: #31383f;
+    line-height: 1.4;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2)> span span{
+    font-weight: bold;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2)> a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #3498db;
+    font-size: 15px;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2)> a p:hover{
+    text-decoration: underline;
+}
+
+header .container .flex >div >div:nth-child(2) .web div .container:nth-child(2)> a span{
+    font-size: 18px;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div{
+    padding: 0;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div{
+    display: flex;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a{
+    width: 50%;
+    padding: 40px 50px 30px 30px;
+    text-align: center;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a:nth-child(1){
+    border-right: 2px solid #dae0e2;
+}
+
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a:hover{
+    background-color: #f5f7f8;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a > span{
+    font-size: 60px;
+    color: #657280;
+    margin-bottom: 20px;
+}
+header .container .flex >div >div:nth-child(2) .email> div >div >a:hover >span{
+    color: #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a > p:nth-child(2){
+    font-size: 15px;
+    font-weight: 400;
+    width: 60%;
+    color: #657280;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #dae0e2;
+    margin: auto;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a:hover >p:nth-child(2){
+    color: #c32888;
+    border-bottom: 2px solid #c32888;
+}
+
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a > p:nth-child(2) span{
+    font-weight:bold ;
+}
+
+header .container .flex >div >div:nth-child(2) .email> div >div >a > p:nth-child(3){
+    font-size: 14px;
+    font-weight: 400;
+    color: #657280;
+    width: 60%;
+    margin: 15px auto;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div{
+    padding: 0;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1){
+    display: flex;
+    border-bottom: 1px solid #dae0e2;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a{
+    width: 50%;
+    padding: 40px 40px 20px;
+    text-align: center;
+}
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a:nth-child(1){
+    border-right: 1px solid #dae0e2;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a:hover{
+    background-color: #f5f7f8;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a span{
+    font-size: 60px;
+    color: #657280;
+    margin-bottom: 15px;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a:hover h2,
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a:hover span{
+    color: #c32888;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #31383f;
+    /* margin-bottom: 15px; */
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(1) a p{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #657280;
+    line-height: 1.4;
+    font-style: italic;
+    width: 70%;
+    margin: auto;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    padding:  20px 0;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2)> p:nth-child(1){
+    font-size: 14px;
+    color: #31383f;
+    line-height: 1.4;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2) p:nth-child(1) span{
+    font-weight: bold;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2)> span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #3498db;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2)> span:hover p{
+    text-decoration: underline;
+}
+
+header .container .flex >div >div:nth-child(2) .vps> div .container:nth-child(2)> span span{
+    font-size: 20px;
+}
+
+
+header .container .flex >div >div:nth-child(3){
+    display: none;
+}
+
+
+@media (max-width: 991px){
+    header .container .flex >div >div > span> span:nth-child(2){
+        display: none;
+    }
+
+    header .container .flex >div >div > span:nth-child(3){
+        display: none;
+    }
+
+    header .container .flex img {
+        height: 48px;
+    }
+    header .container .flex >div{
+        gap: 10px;
+    }
+
+    header .container .flex >div >div:nth-child(2) {
+        gap: 15px;
+    }
+
+    header .container .flex >div >div:nth-child(2) .email >a,
+    header .container .flex >div >div:nth-child(2) .ssl >a, 
+    header .container .flex >div >div:nth-child(2) .vps >a, 
+    header .container .flex >div >div:nth-child(2) .web >a, 
+    header .container .flex >div >div:nth-child(2) .domain >a{
+        font-size: 18px;
+    }
+
+    header .container .flex >div >div:nth-child(2) .email:hover >div,
+    header .container .flex >div >div:nth-child(2) .email:hover > a::after,
+    header .container .flex >div >div:nth-child(2) .vps:hover >div,
+    header .container .flex >div >div:nth-child(2) .vps:hover > a::after,
+    header .container .flex >div >div:nth-child(2) .web:hover >div,
+    header .container .flex >div >div:nth-child(2) .web:hover > a::after,
+    header .container .flex >div >div:nth-child(2) .domain:hover >div,
+    header .container .flex >div >div:nth-child(2) .domain:hover > a::after{
+        display: none;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: 767px){
+    header .container .flex {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header .container .flex >div >div > span:nth-child(1){
+        display: none;
+    }
+
+    header .container .flex >div >div:nth-child(2){
+        display: none;
+    }
+
+    header .container .flex{
+        gap: 10px;
+    }
+
+    header .container .flex >div{
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header .container .flex >div >div:nth-child(3){
+        display: block;
+        position: relative;
+    }
+
+    header .container .flex >div >div:nth-child(3) .menu{
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header .container .flex >div >div:nth-child(3) .menu p{
+        font-size: 22px;
+        color: #262930;
+        font-weight: 700;
+    }
+
+    header .container .flex >div >div:nth-child(3) .none{
+        position: absolute;
+        right: -10px;
+        width: 200%;
+        z-index: 100;
+        background-color: #31383f;
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        padding: 10px 0 30px;
+        display: none;
+    }
+
+    header .container .flex >div >div:nth-child(3) .none a{
+        color: #fff;
+        padding: 20px;
+        font-size: 15px;
+    }
+}
+
